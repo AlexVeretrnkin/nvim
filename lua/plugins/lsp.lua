@@ -13,8 +13,9 @@ return {
 			ensure_installed = {
 				"lua_ls", -- 👈 потрібен для lua_ls
 				"angularls", -- angularls
-				"ts_ls", -- tsserver (для TS)
-				"tsgo", -- tsserver (для TS)
+				-- "ts_ls", -- tsserver (для TS)
+				"vtsls",
+				-- "tsgo", -- tsserver (для TS)
 				"eslint", -- eslint
 			},
 			automatic_installation = true,

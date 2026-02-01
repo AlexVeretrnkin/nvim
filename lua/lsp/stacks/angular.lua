@@ -20,7 +20,8 @@ return function(lsp)
 	vim.lsp.enable("emmet_ls")
 	-- typescript LSP
 	-- vim.lsp.enable("ts_ls")
-	vim.lsp.enable("tsgo")
+	vim.lsp.enable("vtsls")
+	-- vim.lsp.enable("tsgo")
 	vim.lsp.enable("css_variables")
 	vim.lsp.enable("somesass_ls")
 end
