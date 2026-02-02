@@ -9,4 +9,12 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end,
 })
 
-require "core.angular-switcher";
+require("core.angular-switcher")
+require("core.buffers")
+
+vim.keymap.set("n", "<leader>cd", function()
+	-- Get the directory of the current file as a relative path
+	local relative_dir = vim.fn.expand("%:.:h")
+	-- Copy it into the clipboard
+	vim.fn.setreg("+", relative_dir)
+end, { desc = "Copy current file directory (relative) to clipboard" })
